@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: #52433d;
@@ -150,6 +155,12 @@ header #header_type {
   }
 }
 
+@media (min-width: 992px) {
+  header {
+    min-height: 100vh;
+  }
+}
+
 /* section01 about me */
 #section01 {
   background-color: #f0e8e8;
@@ -223,7 +234,14 @@ header #header_type {
 
 @media (min-width: 992px) {
   #section01 {
-    height: 100vh;
+    min-height: 100vh;
+  }
+  #section01 #section01_bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcfaf2;
+    -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+            clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
   }
   #section01 #section01_content {
     margin-bottom: 0rem;
@@ -324,10 +342,17 @@ header #header_type {
 
 @media (min-width: 992px) {
   #section02 {
-    height: 120vh;
+    min-height: 100vh;
+  }
+  #section02 #section02_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #f0e8e8;
+    -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+            clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
   }
   #section02 #section02_content {
-    margin-bottom: 0rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -335,8 +360,10 @@ header #header_type {
   width: 100%;
   height: 100%;
   background-color: #fcfaf2;
-  -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
-          clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
+}
+
+#section03 .icon_color {
+  color: #cb4042;
 }
 
 #section03 #section03_content {

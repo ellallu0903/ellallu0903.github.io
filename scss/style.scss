@@ -37,6 +37,10 @@ $breakpoint-xl: 1200px;
   }
 }
 
+* {
+  transition: 1s;
+}
+
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: $darkGrayColor;
@@ -164,6 +168,10 @@ header {
       font-size: 2.5rem;
     }
   }
+
+  @include lg {
+    min-height: 100vh;
+  }
 }
 
 /* section01 about me */
@@ -228,7 +236,13 @@ header {
   }
 
   @include lg {
-    height: 100vh;
+    min-height: 100vh;
+    #section01_bg {
+      width: 100%;
+      min-height: 100vh;
+      background-color: $bgColor01;
+      clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+    }
     #section01_content {
       margin-bottom: 0rem;
     }
@@ -321,9 +335,15 @@ header {
   }
 
   @include lg {
-    height: 120vh;
+    min-height: 100vh;
+    #section02_bg {
+      width: 100%;
+      height: 100%;
+      background-color: $bgColor02;
+      clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+    }
     #section02_content {
-      margin-bottom: 0rem;
+      margin-bottom: 3.5rem;
     }
   }
 }
@@ -333,7 +353,11 @@ header {
     width: 100%;
     height: 100%;
     background-color: $bgColor01;
-    clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
+    // clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
+  }
+
+  .icon_color {
+    color: $primaryColor;
   }
 
   #section03_content {

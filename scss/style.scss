@@ -1,0 +1,204 @@
+// color
+$primaryColor: #cb4042;
+$darkGrayColor: #52433d;
+$grayColor: #bdc0ba;
+
+// radius
+$cardradius: 1rem;
+
+// 斷點 @mixin + @content -> @include
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin sm {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: $darkGrayColor;
+  background-color: rgba($color: $grayColor, $alpha: 0.2);
+}
+
+.section_title {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  color: $primaryColor;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba($primaryColor, 0.8);
+}
+
+.primary_color {
+  color: rgba($primaryColor, 0.8);
+}
+
+/* 反白 */
+::selection {
+  background: rgba(203, 64, 66, 0.5);
+  color: white;
+}
+
+/* 各大區塊的預設 */
+#section01,
+#section02,
+#section03,
+#section04,
+#section05,
+#section06 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section01 home */
+header {
+  height: 100vh;
+  width: 100%;
+
+  i {
+    color: rgba($color: white, $alpha: 0.7);
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  #down_scroll:hover {
+    transform: scale(1.1) translateY(5px);
+    transition: 1s;
+  }
+
+  .header_img {
+    height: 95%;
+    width: 100%;
+    background: linear-gradient(
+        to right bottom,
+        rgba($primaryColor, 0),
+        rgba($primaryColor, 0.3)
+      ),
+      url(https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header_title {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 3rem;
+  }
+
+  #header_type {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  @include md {
+    .header_title {
+      font-size: 5rem;
+    }
+
+    #header_type {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/* section01 about me */
+#section01 {
+  .avator {
+    min-height: 300px;
+    background: url(../images/per_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #quote {
+    color: rgba($darkGrayColor, 0.7);
+  }
+
+  footer.blockquote-footer {
+    color: rgba($darkGrayColor, 0.5);
+  }
+
+  @include lg {
+    height: 100vh;
+  }
+}
+
+/* section02 resume */
+#section02 {
+  background: rgba($color: $primaryColor, $alpha: 0.2);
+  @include lg {
+    height: 100vh;
+  }
+}
+
+/* footer */
+#footer {
+  padding: 1rem 0;
+  background-color: $primaryColor;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+
+  #connet_icon i {
+    color: white;
+  }
+}
+
+/* go_top */
+#go_top_page {
+  width: 50px;
+  height: 50px;
+  background: rgba($primaryColor, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+#go_top_page a {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}

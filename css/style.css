@@ -283,7 +283,7 @@ header #header_type {
             clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
   }
   #section01 #section01_content {
-    margin-bottom: 0rem;
+    margin-bottom: 12rem;
   }
 }
 
@@ -403,10 +403,20 @@ header #header_type {
   }
 }
 
+#section03 {
+  background-color: #f0e8e8;
+}
+
 #section03 #section03_bg {
   width: 100%;
   height: 100%;
   background-color: #fcfaf2;
+  -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
+          clip-path: polygon(0px 0px, 100% 0%, 100% 85%, 0px 95%);
+}
+
+#section03 #section03_content {
+  margin-bottom: 15rem;
 }
 
 #section03 h3 {
@@ -466,16 +476,19 @@ header #header_type {
   -webkit-filter: brightness(1);
 }
 
-#section03 #section03_content {
-  margin-bottom: 15rem;
-}
-
 @media (min-width: 992px) {
   #section03 {
-    height: 100vh;
+    min-height: 100vh;
   }
   #section03 #section03_content {
-    margin-bottom: 0rem;
+    margin-bottom: 15rem;
+  }
+  #section03 #section03_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #fcfaf2;
+    -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+            clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
   }
 }
 
@@ -509,12 +522,123 @@ header #header_type {
   }
 }
 
-#section04 .section04_bg {
-  background-color: #fcfaf2;
+#section04 {
+  width: 100%;
+  height: 100%;
+  background-color: #f0e8e8;
+  /*hovers*/
 }
 
 #section04 #section04_content {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+#section04 .container_foto {
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px rgba(82, 67, 61, 0.5);
+          box-shadow: 0 0 5px rgba(82, 67, 61, 0.5);
+  padding: 0;
+  overflow: hidden;
+  max-width: 350px;
+  margin: 5px;
+}
+
+#section04 .container_foto article {
+  padding: 10%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#section04 .container_foto h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 3px 3px #52433d;
+}
+
+#section04 .container_foto h4 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 2px 2px #52433d;
+}
+
+#section04 .container_foto img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+#section04 .ver_mas {
+  background-color: #cb4042;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section04 hr.hrStyle {
+  border-top: 1px solid white;
+}
+
+#section04 .container_foto:hover img {
+  opacity: 0.3;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#section04 .container_foto:hover h2,
+#section04 .container_foto:hover h4 {
+  color: #52433d;
+  text-shadow: none;
+}
+
+#section04 .container_foto:hover hr.hrStyle {
+  border-top: 1px solid #52433d;
+}
+
+#section04 .container_foto:hover article {
+  transform: translate(2px, -69px);
+  -webkit-transform: translate(2px, -49px);
+  -moz-transform: translate(2px, -69px);
+  -o-transform: translate(2px, -69px);
+  -ms-transform: translate(2px, -69px);
+}
+
+#section04 .container_foto:hover .ver_mas {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+#section04 i {
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -522,7 +646,7 @@ header #header_type {
     min-height: 100vh;
   }
   #section04 #section04_content {
-    margin-bottom: 0rem;
+    margin-bottom: 5rem;
   }
 }
 

@@ -264,6 +264,13 @@ header {
     margin-bottom: 18rem;
   }
 
+  a:hover {
+    padding: 2px;
+    i {
+      color: $primaryColor;
+    }
+  }
+
   /* Timeline holder */
   ul.timeline {
     list-style-type: none;

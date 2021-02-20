@@ -269,6 +269,14 @@ header #header_type {
   margin-bottom: 18rem;
 }
 
+#section02 a:hover {
+  padding: 2px;
+}
+
+#section02 a:hover i {
+  color: #cb4042;
+}
+
 #section02 ul.timeline {
   list-style-type: none;
   position: relative;

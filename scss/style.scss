@@ -132,12 +132,12 @@ header {
     width: 100%;
     background: linear-gradient(
         to right bottom,
-        rgba($primaryColor, 0),
-        rgba($primaryColor, 0.3)
+        rgba($darkGrayColor, 0),
+        rgba($darkGrayColor, 0.8)
       ),
-      url(https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-    background-size: cover;
-    background-position: center;
+      url(../images/header_img.jpg);
+    background-size: contain;
+    // background-position: center;
     background-repeat: no-repeat;
     clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
     display: flex;
@@ -191,8 +191,7 @@ header {
 
   .avator {
     min-height: 350px;
-    background: url(../images/per_image.jpg);
-    background-position: center;
+    background: url(../images/per_image.jpg) center/cover;
     background-repeat: no-repeat;
     position: relative;
     border-top-right-radius: 10px;
@@ -222,6 +221,8 @@ header {
     &:hover {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
+      filter: brightness(1.2);
+
       &:before,
       &:after {
         width: 103%;
@@ -510,6 +511,7 @@ header {
 
   .card {
     width: 300px;
+    // min-height: 400px;
     display: inline-block;
     margin: 1rem;
     border-radius: 4px;
@@ -578,13 +580,28 @@ header {
               border-color: $primaryColor;
             }
           }
+
+          & a.toGithub {
+            color: #fff;
+            padding: 0 2rem;
+            display: inline-block;
+            border: 0px solid rgba(255, 255, 255, 0.4);
+            height: 0px;
+            line-height: 0px;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+              transform: scale(1.1) translateY(-3px);
+            }
+          }
         }
       }
     }
 
     &-content {
       width: 100%;
-      min-height: 104px;
+      min-height: 229.8px;
       background-color: #fff;
       border-top: 1px solid #e9e9eb;
       border-bottom-right-radius: 4px;
@@ -607,12 +624,17 @@ header {
       a p {
         font-size: 0.8rem;
         font-weight: 400;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         color: rgba(32, 41, 28, 0.8);
+        margin-bottom: 0.5rem;
       }
     }
+  }
+
+  .badge_style {
+    color: #fff;
+    background-color: rgba($darkGrayColor, 0.5);
   }
 
   @include lg {

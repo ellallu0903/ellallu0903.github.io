@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./css/animate.min.css" />
     <!-- magnific-popup -->
     <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="header">
@@ -90,7 +92,10 @@
               <nav
                 class="nav row justify-content-center align-items-center text-center mt-4"
               >
-                <div class="col-12 col-md-4 nav-btn my-4 m-md-0">
+                <div
+                  class="col-12 col-md-4 nav-btn my-4 m-md-0"
+                  data-aos="flip-left"
+                >
                   <a
                     class="btn btn_primaryColor active mr-lg-3 w-100"
                     href="#section02"
@@ -98,7 +103,10 @@
                     >Resume</a
                   >
                 </div>
-                <div class="col-12 col-md-4 nav-btn mb-4 m-md-0">
+                <div
+                  class="col-12 col-md-4 nav-btn mb-4 m-md-0"
+                  data-aos="flip-left"
+                >
                   <a
                     class="btn btn_subColor mr-lg-3 w-100"
                     href="#section03"
@@ -106,7 +114,10 @@
                     >Skills</a
                   >
                 </div>
-                <div class="col-12 col-md-4 nav-btn mb-4 m-md-0">
+                <div
+                  class="col-12 col-md-4 nav-btn mb-4 m-md-0"
+                  data-aos="flip-left"
+                >
                   <a
                     class="btn btn_subColor w-100"
                     href="#section04"
@@ -134,7 +145,7 @@
               <ul class="timeline">
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                   <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">
+                  <h2 class="h5 mb-0" data-aos="zoom-in">
                     勞動部勞動力發展署－前端網頁開發技術班
                     <span class="popup-gallery ml-2 mt-3">
                       <a
@@ -170,7 +181,9 @@
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                   <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">世新大學 社會心理學系</h2>
+                  <h2 class="h5 mb-0" data-aos="zoom-in">
+                    世新大學 社會心理學系
+                  </h2>
                   <span class="small text-gray"
                     ><i class="fa fa-clock mr-1"></i> SEP, 2016 - JUN,
                     2020</span
@@ -190,7 +203,7 @@
               <ul class="timeline">
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                   <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">
+                  <h2 class="h5 mb-0" data-aos="zoom-in">
                     普斯諦蛻變坊－天使志工
                     <a
                       class="image-popup-vertical-fit ml-2"
@@ -212,7 +225,7 @@
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                   <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">優雅客－實習生</h2>
+                  <h2 class="h5 mb-0" data-aos="zoom-in">優雅客－實習生</h2>
                   <span class="small text-gray"
                     ><i class="fa fa-clock mr-1"></i>MAY, 2019 - NOV, 2019</span
                   >
@@ -224,7 +237,9 @@
                 </li>
                 <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                   <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">台北郵局 快捷郵件科－工讀生</h2>
+                  <h2 class="h5 mb-0" data-aos="zoom-in">
+                    台北郵局 快捷郵件科－工讀生
+                  </h2>
                   <span class="small text-gray"
                     ><i class="fa fa-clock mr-1"></i>JUL, 2018 - AUG, 2018</span
                   >
@@ -251,6 +266,7 @@
           <div class="card-deck px-5 px-lg-0">
             <div
               class="card border-danger py-4 mb-4 mb-lg-0 card_style card_filter_dark"
+              data-aos="fade-up"
             >
               <div
                 class="d-flex justify-content-center align-items-center mt-5 icon_color"
@@ -270,6 +286,7 @@
             </div>
             <div
               class="card border-danger py-4 mb-4 mb-lg-0 card_style card_filter_light"
+              data-aos="fade-up"
             >
               <div
                 class="d-flex justify-content-center align-items-center mt-5 icon_color"
@@ -288,7 +305,10 @@
                 </ul>
               </div>
             </div>
-            <div class="card border-danger py-4 card_style card_filter_dark">
+            <div
+              class="card border-danger py-4 mb-4 mb-lg-0 card_style card_filter_dark"
+              data-aos="fade-up"
+            >
               <div
                 class="d-flex justify-content-center align-items-center mt-5 icon_color"
               >
@@ -308,6 +328,7 @@
         </div>
       </div>
     </section>
+    <!-- portfolio -->
     <section id="section04">
       <div id="section04_bg">
         <div id="section04_content" class="container h-100">
@@ -315,7 +336,7 @@
             Portfolio
           </div>
           <div class="row justify-content-center align-items-center">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down">
               <div
                 class="card-img"
                 style="
@@ -323,95 +344,344 @@
                 "
               >
                 <div class="overlay">
-                  <div class="overlay-content">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
                     <a
-                      class="hover"
+                      class="hover mt-3 mb-4"
                       href="https://ellallu0903.github.io/vue-readYourMind/"
                       target="_blank"
-                      >View Project</a
+                      >View</a
                     >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/vue-readYourMind"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
 
               <div class="card-content">
-                <a href="#!">
-                  <h2>Title</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor
-                  </p>
-                </a>
+                <h5>讀心 Read your mind</h5>
+                <p>
+                  此平台以個人檔案的概念將測驗結果整合，可供使用者追蹤自己改變的幅度，比對每次測驗的結果，記錄下自己變化成長的軌跡。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">Sass</span>
+                <span class="badge badge-pill badge_style">Vue.js</span>
+                <span class="badge badge-pill badge_style">Node.js</span>
+                <span class="badge badge-pill badge_style">MongoDB</span>
+                <span class="badge badge-pill badge_style">Axios</span>
+                <span class="badge badge-pill badge_style">Buefy</span>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down">
               <div
                 class="card-img"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1491374812364-00028bbe7d2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a22e4862c36c552e726815949fbcb41a&auto=format&fit=crop&w=500&q=60);
+                  background-image: url(./images/portfolio/my_potfolio.jpg);
                 "
               >
                 <div class="overlay">
-                  <div class="overlay-content">
-                    <a href="#!">View Project</a>
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/ellallu0903.github.io/"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/ellallu0903.github.io"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
 
               <div class="card-content">
-                <a href="#!">
-                  <h2>Title</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor
-                  </p>
-                </a>
+                <h5>作品集 | 盧怡蓁 YI-ZGEN,LU</h5>
+                <p>
+                  作品集網站包含了個人的基本介紹、學經歷，以及相關作品與連結。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">Sass</span>
+                <span class="badge badge-pill badge_style">Bootstrap </span>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down">
               <div
                 class="card-img"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1519176336903-04be58a477d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eda05ddcb3154f39fd8ce88fdd44f531&auto=format&fit=crop&w=500&q=60);
+                  background: url(./images/portfolio/LI-GU_LOGO2.png) center
+                    no-repeat;
+                  background-size: 50%;
                 "
               >
                 <div class="overlay">
-                  <div class="overlay-content">
-                    <a href="#!">View Project</a>
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="image-popup-vertical-fit hover mt-3 mb-4"
+                      href="./images/portfolio/LI-GU_QRcode.png"
+                    >
+                      ID：@155rupld
+                    </a>
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/LineBot_Li-Gu"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
 
               <div class="card-content">
-                <a href="#!">
-                  <h2>Title</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor
-                  </p>
-                </a>
+                <h5>LineBot－歷古嚦咕 Li-Gu</h5>
+                <p>
+                  是一款專門查詢台灣古蹟、歷史建築資訊的機器人，可輸入關鍵字或指令查詢古蹟與歷史建築，也可以依據使用者發送的位置資訊搜尋附近有無古蹟。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">Node.js</span>
+                <span class="badge badge-pill badge_style">Axios</span>
               </div>
             </div>
-            <div class="card">
+
+            <div class="card" data-aos="zoom-in-down">
               <div
                 class="card-img"
-                style="
-                  background-image: url(https://images.unsplash.com/photo-1519176336903-04be58a477d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eda05ddcb3154f39fd8ce88fdd44f531&auto=format&fit=crop&w=500&q=60);
-                "
+                style="background-image: url(./images/portfolio/js_clock.jpg)"
               >
                 <div class="overlay">
-                  <div class="overlay-content">
-                    <a href="#!">View Project</a>
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/js-clock/0915_HW_Clock-4.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/js-clock"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
 
               <div class="card-content">
-                <a href="#!">
-                  <h2>Title</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor
-                  </p>
-                </a>
+                <h5>Clock－4 countries</h5>
+                <p>
+                  穿梭在異國美景的時鐘，享受時間的流逝。點選國旗圖示可切換背景與時間。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">JavaScript</span>
+                <span class="badge badge-pill badge_style">jQuery</span>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in-down">
+              <div
+                class="card-img"
+                style="background-image: url(./images/portfolio/js_wam.jpg)"
+              >
+                <div class="overlay">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/js-wam/0922_HW_game.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/js-wam"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h5>Catch soot sprite!</h5>
+                <p>
+                  以《神隱少女》為主題的打地鼠遊戲。透過滑鼠點擊或鍵盤來進行遊戲。點擊煤炭與星星會加分，點選小老鼠則會扣分。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in-down">
+              <div
+                class="card-img"
+                style="background-image: url(./images/portfolio/jq_zombie.jpg)"
+              >
+                <div class="overlay">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/jq-zombie/20201005_HW_zombie.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/jq-zombie"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h5>おジャ魔女どれみ GAME</h5>
+                <p>
+                  以《小魔女
+                  Doremi》為主題的打殭屍遊戲。成功點擊小魔女會加分，若是點選到魔女莉卡超過三次，則會終止遊戲。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">jQuery</span>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in-down">
+              <div
+                class="card-img"
+                style="
+                  background: url(./images/portfolio/jq_card.jpg) center/cover
+                    no-repeat;
+                "
+              >
+                <div class="overlay">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/jq-cards/20201012_HW_Cards.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/jq-cards"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h5>Forest animals－Memory game</h5>
+                <p>
+                  此為療癒森林風格的翻牌遊戲。卡牌配對成功，大熊會呼叫出朋友的名字，並收藏入牠的圖鑑之中。
+                </p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">jQuery</span>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in-down">
+              <div
+                class="card-img"
+                style="background-image: url(./images/portfolio/bs_login.jpg)"
+              >
+                <div class="overlay">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/bs_login/HW_login.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/bs_login"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h5>Layout－Log in</h5>
+                <p>使用 Bootstrap 切版，完成具 RWD 的 Login 畫面。</p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in-down">
+              <div
+                class="card-img"
+                style="
+                  background-image: url(./images/portfolio/bs_nameCard.jpg);
+                "
+              >
+                <div class="overlay">
+                  <div
+                    class="overlay-content d-flex flex-column justify-content-center align-items-center h-100"
+                  >
+                    <a
+                      class="hover mt-3 mb-4"
+                      href="https://ellallu0903.github.io/bs_name_card/HW_name_card.html"
+                      target="_blank"
+                      >View</a
+                    >
+                    <a
+                      class="toGithub"
+                      href="https://github.com/ellallu0903/bs_name_card"
+                      target="_blank"
+                    >
+                      <i class="fab fa-2x fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h5>Layout－name card</h5>
+                <p>使用 Bootstrap 切版，完成具 RWD 的 電子名片。</p>
+                <span class="badge badge-pill badge_style">HTML</span>
+                <span class="badge badge-pill badge_style">CSS</span>
+                <span class="badge badge-pill badge_style">Bootstrap</span>
               </div>
             </div>
           </div>
@@ -462,6 +732,7 @@
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/magnific-popup-single.js"></script>
     <script src="./js/Lightbox gallery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       var header_type = document.getElementById('header_type')
 
@@ -527,6 +798,9 @@
             next()
           })
       })
+
+      // AOS
+      AOS.init()
     </script>
   </body>
 </html>

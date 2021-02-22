@@ -4,9 +4,11 @@
   transition: 1s;
 }
 
+html,
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: #52433d;
+  overflow-x: hidden;
 }
 
 .section_title {

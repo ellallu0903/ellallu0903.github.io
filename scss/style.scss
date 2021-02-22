@@ -41,9 +41,11 @@ $breakpoint-xl: 1200px;
   transition: 1s;
 }
 
+html,
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: $darkGrayColor;
+  overflow-x: hidden;
 }
 
 .section_title {

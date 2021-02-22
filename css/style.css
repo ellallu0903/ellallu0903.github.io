@@ -62,8 +62,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .down_btn {
@@ -624,6 +622,8 @@ header #header_type {
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #section04 .card-img .overlay .overlay-content a:hover, #section04 .card-img .overlay .overlay-content a.hover {

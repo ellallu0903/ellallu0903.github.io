@@ -90,7 +90,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
 }
 
 .down_btn {
@@ -297,6 +296,10 @@ header {
   #section02_content {
     margin-bottom: 18rem;
   }
+
+  // a {
+  //   transition: all 1s;
+  // }
 
   a:hover {
     padding: 2px;
@@ -572,6 +575,7 @@ header {
             border-radius: 20px;
             cursor: pointer;
             text-decoration: none;
+            transition: all 1s;
 
             &:hover,
             &.hover {

@@ -37,10 +37,6 @@ $breakpoint-xl: 1200px;
   }
 }
 
-* {
-  transition: 1s;
-}
-
 html,
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -94,6 +90,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 
 .down_btn {

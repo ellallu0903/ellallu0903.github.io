@@ -32,8 +32,6 @@
     <link rel="stylesheet" href="./css/animate.min.css" />
     <!-- magnific-popup -->
     <link rel="stylesheet" href="./css/magnific-popup.css" />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="header">
@@ -707,6 +705,13 @@
         ><i class="fas fa-chevron-up"></i
       ></a>
     </div>
+    <!-- loading -->
+    <div id="ld">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -716,8 +721,25 @@
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/magnific-popup-single.js"></script>
     <script src="./js/Lightbox gallery.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      $('#header').hide()
+      $('#section01').hide()
+      $('#section02').hide()
+      $('#section03').hide()
+      $('#section04').hide()
+      $('#footer').hide()
+
+      // loading
+      $(window).on('load', function () {
+        $('#ld').remove()
+        $('#header').fadeIn(1000)
+        $('#section01').fadeIn(1500)
+        $('#section02').fadeIn(1500)
+        $('#section03').fadeIn(1500)
+        $('#section04').fadeIn(1500)
+        $('#footer').fadeIn(1500)
+      })
+
       var header_type = document.getElementById('header_type')
 
       var typewriter = new Typewriter(header_type, {

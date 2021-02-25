@@ -48,9 +48,7 @@ p {
 #section01,
 #section02,
 #section03,
-#section04,
-#section05,
-#section06 {
+#section04 {
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -386,7 +384,7 @@ header #header_type {
 
 @media (min-width: 992px) {
   #section02 {
-    min-height: 100vh;
+    height: 100vh;
   }
   #section02 #section02_bg {
     width: 100%;
@@ -396,7 +394,7 @@ header #header_type {
             clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
   }
   #section02 #section02_content {
-    margin-bottom: 3.5rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -475,10 +473,10 @@ header #header_type {
 
 @media (min-width: 992px) {
   #section03 {
-    min-height: 100vh;
+    height: 100vh;
   }
   #section03 #section03_content {
-    margin-bottom: 15rem;
+    margin-bottom: 0rem;
   }
   #section03 #section03_bg {
     width: 100%;

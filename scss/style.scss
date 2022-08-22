@@ -39,13 +39,13 @@ $breakpoint-xl: 1200px;
 
 html,
 body {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   color: $darkGrayColor;
   overflow-x: hidden;
 }
 
 .section_title {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2.5rem;
   color: $primaryColor;
   font-weight: 600;
@@ -131,7 +131,7 @@ header {
         rgba($darkGrayColor, 0),
         rgba($darkGrayColor, 0.8)
       ),
-      url(../images/header_img.jpg);
+      url(../images/header_bg.jpeg);
     background-size: contain;
     // background-position: center;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@ header {
   }
 
   .header_title {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     color: white;
     font-size: 3rem;
   }
@@ -195,7 +195,7 @@ header {
     transition: all 1s;
     &:after,
     &:before {
-      content: ' ';
+      content: " ";
       width: 25px;
       height: 25px;
       position: absolute;
@@ -311,7 +311,7 @@ header {
 
   /* Timeline vertical line */
   ul.timeline:before {
-    content: ' ';
+    content: " ";
     background: #fff;
     display: inline-block;
     position: absolute;
@@ -345,7 +345,7 @@ header {
 
   /* Timeline item circle marker */
   li.timeline-item::before {
-    content: ' ';
+    content: " ";
     background: #ddd;
     display: inline-block;
     position: absolute;
@@ -358,7 +358,7 @@ header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   li.timeline-item:hover::before {
-    content: ' ';
+    content: " ";
     background: $primaryColor;
     display: inline-block;
     position: absolute;

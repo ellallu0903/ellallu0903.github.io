@@ -125,6 +125,59 @@
             Resume
           </div>
           <div class="row justify-content-center">
+            <div class="col-11 col-lg-6">
+              <h4 class="ml-5 darkGrayColor">經歷</h4>
+              <!-- Timeline -->
+              <ul class="timeline">
+                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                  <div class="timeline-arrow"></div>
+                  <h2 class="h5 mb-0">找活股份有限公司－前端工程師</h2>
+                  <span class="small text-gray"
+                    ><i class="fa fa-clock mr-1"></i>MAR, 2021 - present</span
+                  >
+                  <ul class="mt-2 font-weight-light">
+                    <li>以 React 與 Next.js 開發維護公司產品</li>
+                    <li>協同 PM 產出功能測試文件，與後端工程師討論 API 規格</li>
+                    <li>具有敏捷式開發經驗，帶領團隊進行 Scrum 流程</li>
+                  </ul>
+                </li>
+                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                  <div class="timeline-arrow"></div>
+                  <h2 class="h5 mb-0">
+                    普斯諦蛻變坊－天使志工
+                    <a
+                      class="image-popup-vertical-fit ml-2"
+                      href="https://i.imgur.com/p247RjP.jpg"
+                    >
+                      <i class="fas fa-file-alt fa-md primary_color"></i>
+                    </a>
+                  </h2>
+                  <span class="small text-gray"
+                    ><i class="fa fa-clock mr-1"></i>JAN, 2020 - JUL, 2020</span
+                  >
+                  <ul class="mt-2 font-weight-light">
+                    <li>協助管理粉絲專頁及回覆私訊、審核讀書會社團成員資格</li>
+                    <li>參與活動籌備、撰寫宣傳文案、製作簡報、設計宣傳圖</li>
+                    <li>
+                      線上活動後勤（寄送信件、確認名單、技術支援、現場支援）
+                    </li>
+                  </ul>
+                </li>
+                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                  <div class="timeline-arrow"></div>
+                  <h2 class="h5 mb-0">優雅客－實習生</h2>
+                  <span class="small text-gray"
+                    ><i class="fa fa-clock mr-1"></i>MAY, 2019 - NOV, 2019</span
+                  >
+                  <ul class="mt-2 font-weight-light">
+                    <li>負責經營粉絲專頁（構想文案、宣傳活動、企劃提案）</li>
+                    <li>實體活動協助（事前電聯、場佈，活動紀錄）</li>
+                    <li>行政庶務（文件掃描建檔、維護辦公環境）</li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- End -->
+            </div>
             <div class="col-11 mb-4 m-lg-0 col-lg-6">
               <h4 class="ml-5 darkGrayColor">學歷</h4>
               <!-- Timeline -->
@@ -178,47 +231,6 @@
                     <li>
                       2017「數位化人際互動」主題徵文暨研究計畫構想書比賽（主題徵文組）佳作
                     </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- End -->
-            </div>
-            <div class="col-11 col-lg-6">
-              <h4 class="ml-5 darkGrayColor">經歷</h4>
-              <!-- Timeline -->
-              <ul class="timeline">
-                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                  <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">
-                    普斯諦蛻變坊－天使志工
-                    <a
-                      class="image-popup-vertical-fit ml-2"
-                      href="https://i.imgur.com/p247RjP.jpg"
-                    >
-                      <i class="fas fa-file-alt fa-md primary_color"></i>
-                    </a>
-                  </h2>
-                  <span class="small text-gray"
-                    ><i class="fa fa-clock mr-1"></i>JAN, 2020 - JUL, 2020</span
-                  >
-                  <ul class="mt-2 font-weight-light">
-                    <li>協助管理粉絲專頁及回覆私訊、審核讀書會社團成員資格</li>
-                    <li>參與活動籌備、撰寫宣傳文案、製作簡報、設計宣傳圖</li>
-                    <li>
-                      線上活動後勤（寄送信件、確認名單、技術支援、現場支援）
-                    </li>
-                  </ul>
-                </li>
-                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                  <div class="timeline-arrow"></div>
-                  <h2 class="h5 mb-0">優雅客－實習生</h2>
-                  <span class="small text-gray"
-                    ><i class="fa fa-clock mr-1"></i>MAY, 2019 - NOV, 2019</span
-                  >
-                  <ul class="mt-2 font-weight-light">
-                    <li>負責經營粉絲專頁（構想文案、宣傳活動、企劃提案）</li>
-                    <li>實體活動協助（事前電聯、場佈，活動紀錄）</li>
-                    <li>行政庶務（文件掃描建檔、維護辦公環境）</li>
                   </ul>
                 </li>
               </ul>
@@ -643,88 +655,88 @@
     <script src="./js/magnific-popup-single.js"></script>
     <script src="./js/Lightbox gallery.js"></script>
     <script>
-      $('#header').hide()
-      $('#section01').hide()
-      $('#section02').hide()
-      $('#section03').hide()
-      $('#section04').hide()
-      $('#footer').hide()
+      $("#header").hide();
+      $("#section01").hide();
+      $("#section02").hide();
+      $("#section03").hide();
+      $("#section04").hide();
+      $("#footer").hide();
 
       // loading
-      $(window).on('load', function () {
-        $('#ld').remove()
-        $('#header').fadeIn(1000)
-        $('#section01').fadeIn(1500)
-        $('#section02').fadeIn(1500)
-        $('#section03').fadeIn(1500)
-        $('#section04').fadeIn(1500)
-        $('#footer').fadeIn(1500)
-      })
+      $(window).on("load", function () {
+        $("#ld").remove();
+        $("#header").fadeIn(1000);
+        $("#section01").fadeIn(1500);
+        $("#section02").fadeIn(1500);
+        $("#section03").fadeIn(1500);
+        $("#section04").fadeIn(1500);
+        $("#footer").fadeIn(1500);
+      });
 
-      var header_type = document.getElementById('header_type')
+      var header_type = document.getElementById("header_type");
 
       var typewriter = new Typewriter(header_type, {
         loop: true,
-      })
+      });
 
       typewriter
-        .typeString('Frontend Developer')
+        .typeString("Frontend Developer")
         .pauseFor(2500)
         .deleteChars(9)
-        .typeString('Engineer')
+        .typeString("Engineer")
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Conscientious, ')
+        .typeString("Conscientious, ")
         .pauseFor(1000)
-        .typeString('Attentive, ')
+        .typeString("Attentive, ")
         .pauseFor(1000)
-        .typeString('Responsible!')
+        .typeString("Responsible!")
         .pauseFor(2500)
-        .start()
+        .start();
 
       // go_top
-      $('#go_top_page').css({ display: 'none' })
-      let nowloc = 0
+      $("#go_top_page").css({ display: "none" });
+      let nowloc = 0;
 
-      $(window).on('scroll', function () {
+      $(window).on("scroll", function () {
         // 目前捲軸捲動的距離(與最頂端 0 之間的距離)
-        nowloc = $(window).scrollTop()
+        nowloc = $(window).scrollTop();
         if (nowloc > 500) {
-          $('#go_top_page').fadeIn()
+          $("#go_top_page").fadeIn();
         } else {
-          $('#go_top_page').fadeOut()
+          $("#go_top_page").fadeOut();
         }
-      })
+      });
 
       // smooth-scroll -- down & top
       $(document).ready(function () {
-        $('a').on('click', function (event) {
-          if (this.hash !== '') {
-            event.preventDefault()
-            var hash = this.hash
-            $('html, body').animate(
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
               {
                 scrollTop: $(hash).offset().top,
               },
               800,
               function () {
-                window.location.hash = hash
+                window.location.hash = hash;
               }
-            )
+            );
           }
-        })
-      })
+        });
+      });
 
       // section04 - card
       $(document).ready(function () {
-        $('.card')
+        $(".card")
           .delay(1800)
           .queue(function (next) {
-            $(this).removeClass('hover')
-            $('a.hover').removeClass('hover')
-            next()
-          })
-      })
+            $(this).removeClass("hover");
+            $("a.hover").removeClass("hover");
+            next();
+          });
+      });
     </script>
   </body>
 </html>

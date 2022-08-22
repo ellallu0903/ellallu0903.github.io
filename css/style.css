@@ -125,6 +125,7 @@ header .header_title {
   font-family: "Merriweather", serif;
   color: white;
   font-size: 3rem;
+  text-align: center;
 }
 header #header_type {
   color: white;
@@ -347,7 +348,7 @@ header #header_type {
 }
 @media (min-width: 992px) {
   #section02 {
-    height: 100vh;
+    height: 125vh;
   }
   #section02 #section02_bg {
     width: 100%;
@@ -358,6 +359,11 @@ header #header_type {
   }
   #section02 #section02_content {
     margin-bottom: 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  #section02 {
+    height: 100vh;
   }
 }
 

@@ -361,11 +361,6 @@ header #header_type {
     margin-bottom: 0rem;
   }
 }
-@media (min-width: 1200px) {
-  #section02 {
-    height: 100vh;
-  }
-}
 
 #section03 {
   background-color: #f0e8e8;
